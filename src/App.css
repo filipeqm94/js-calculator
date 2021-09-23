@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
+.app {
+  width: 300px;
+  height: 450px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  display: grid;
+  grid-template-areas:
+    "a a a a"
+    "b b b c"
+    "d e f g"
+    "h i j k"
+    "l m n o"
+    "p p q r";
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  border: none;
+
+  cursor: pointer;
+  background-color: rgb(82, 82, 82);
+  padding: 3px;
+  margin: 5px;
+
+  border-radius: 50px;
+
+  font-size: 2em;
+
+  color: white;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display {
+  grid-area: a;
+
+  text-align: right;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  font-size: 2em;
+
+  background-color: darkgrey;
+  color: black;
+}
+
+.clear {
+  grid-area: b;
+
+  color: red;
+}
+
+.one {
+  grid-area: l;
+}
+
+.two {
+  grid-area: m;
+}
+
+.three {
+  grid-area: n;
+}
+
+.four {
+  grid-area: h;
+}
+
+.five {
+  grid-area: i;
+}
+
+.six {
+  grid-area: j;
+}
+
+.seven {
+  grid-area: d;
+}
+
+.eight {
+  grid-area: e;
+}
+
+.nine {
+  grid-area: f;
+}
+
+.zero {
+  grid-area: p;
+}
+
+.decimal {
+  grid-area: q;
+}
+
+.division {
+  grid-area: c;
+
+  color: #19ac19;
+}
+
+.multiply {
+  grid-area: g;
+
+  color: #19ac19;
+}
+
+.subtract {
+  grid-area: k;
+
+  color: #19ac19;
+}
+
+.add {
+  grid-area: o;
+
+  color: #19ac19;
+}
+
+.equal {
+  grid-area: r;
+
+  background-color: #19ac19;
 }
